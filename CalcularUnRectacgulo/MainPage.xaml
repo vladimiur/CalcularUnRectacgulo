@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalcularUnRectacgulo.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+            
+            <!--#Cambiamos la imagen-->
+            
+            <Image Source="retan.png" 
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Perimetro de un rectangulo"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="20"
+                HorizontalOptions="Center" />
+
+            <!--#Creamos los entry en donde van a insertar la altura y base, el ultimo va a llamar a el resultado-->
+            <Label
+                Text=""
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
+                HorizontalOptions="Center" />
+            <Entry Placeholder="Introduce la base" x:Name="basen"/>
+            <Entry Placeholder="Intrucude la altura" x:Name="altura"/>
+            <Entry Placeholder="Perimetro" x:Name="respuesta" />
+            <Button Text="Calcular" x:Name="calcular" Clicked="calcular_Clicked"/>
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
